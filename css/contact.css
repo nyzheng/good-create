@@ -1,0 +1,460 @@
+@media screen and (min-width: 768px) {
+    /* 手機版隱藏 */
+    .mobile {
+        display: none !important;
+    }
+    /* 手機版隱藏 */
+
+    .design-container nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 80px 0 0 0;
+    }
+    .design-container nav > .content {
+        width: calc(100% - 400px);
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .breadcrumb {
+        list-style: none;
+        display: flex;
+    }
+    .breadcrumb li {
+        margin-right: 5px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .breadcrumb li + li:before {
+        content: '/';
+        margin-right: 5px;
+    }
+    .breadcrumb a {
+        text-decoration: none;
+        color: #007bff;
+    }
+    .breadcrumb a:hover {
+        text-decoration: underline;
+    }
+
+    .design-container {
+        width: 100%;
+    }
+
+    .area1 {
+        width: 100%;
+        background-image: url('/images/contact-banner.png');
+        height: 600px;
+        position: relative;
+        background-size: cover; /* 讓圖片覆蓋整個區域 */
+        background-position: center; /* 讓圖片居中 */
+        background-repeat: no-repeat; /* 防止圖片重複 */
+    }
+
+    .area1 > .content {
+        width: 100%;
+    }
+
+    .area1 > .content > .text-box {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        animation: area1slide 1s ease-in-out forwards;
+    }
+
+    @keyframes area1slide {
+        0% {
+            right: -200px;
+            opacity: 0;
+        }
+        100% {
+            right: -100px;
+            opacity: 1;
+        }
+    }
+
+    .area1 > .content > .text-box > .title-1 {
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #d17a0d;
+    }
+
+    .area1 > .content > .text-box > .title-2 {
+        font-size: 40px;
+        font-weight: 700;
+        color: #df7009;
+        text-align: right;
+        text-shadow: rgba(220, 228, 107, 0.959) 0px 5px 15px;
+    }
+
+    .area1 > .content > .text-box > .title-3 {
+        font-size: 40px;
+        font-weight: 700;
+        color: #df7009;
+        letter-spacing: 0.2em;
+        color: #ffffff;
+        text-align: right;
+        text-shadow: rgba(75, 75, 75, 0.959) 0px 5px 15px;
+    }
+
+    /* --------- */
+    .area2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        margin: 160px 0 80px 0;
+    }
+
+    .area2 > .content {
+        width: calc(100% - 400px);
+        max-width: 1280px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .area2 .circle {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        background: radial-gradient(circle, rgba(216, 128, 28, 0.8) 40%, rgba(247, 182, 108, 0.05) 70%);
+        position: absolute;
+        top: -100px;
+        right: -20px;
+        z-index: -10;
+        animation: area2_circle 2s ease-in-out forwards;
+        /* animation-play-state: paused;  */
+    }
+
+    .area2 .circle > img {
+        width: 100%;
+        max-width: 150px;
+    }
+
+    @keyframes area2_circle {
+        0% {
+            top: -100px;
+            right: 150px;
+        }
+        100% {
+            top: calc(100% + 400px);
+            right: 85%;
+            width: 400px;
+            height: 400px;
+        }
+    }
+
+    .area2 > .content .arrow {
+        width: 90px;
+    }
+
+    .area2 > .content > .arrow > img {
+        width: 100%;
+    }
+
+    .area2 > .content > .container {
+        width: calc(100% - 120px);
+        position: relative;
+    }
+
+    .area2 > .content > .container > .title-box {
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+    }
+
+    .area2 > .content > .container > .title-box .title-1 {
+        white-space: nowrap;
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+        position: absolute;
+        left: 0;
+        top: -10px;
+        animation: area2_slideIn_2 1s ease-in-out forwards;
+    }
+
+    @keyframes area2_slideIn_2 {
+        0% {
+            left: -500px;
+            opacity: 0;
+            overflow: hidden;
+        }
+        100% {
+            left: 0;
+            opacity: 1;
+        }
+    }
+
+    .area2 > .content > .container > .title-box div {
+        display: flex;
+        align-items: flex-end;
+    }
+    .area2 > .content > .container > .title-box .title-2 {
+        font-size: 24px;
+        /* font-weight: 700; */
+        color: rgba(0, 0, 0, 0.9);
+        margin: 0 40px 0 0;
+    }
+
+    .area2 > .content > .container > .title-box .title-3 {
+        font-size: 18px;
+        /* font-weight: 700; */
+        letter-spacing: 0.2em;
+        color: rgba(0, 0, 0, 0.9);
+    }
+
+    .area2 > .content > .container > .title-box .title-4 {
+        position: relative;
+        top: 60px;
+        animation: area2_slideIn 1s ease-in-out forwards;
+    }
+
+    @keyframes area2_slideIn {
+        0% {
+            left: 500px;
+            opacity: 0;
+            overflow: hidden;
+        }
+        100% {
+            left: 0;
+            opacity: 1;
+        }
+    }
+
+    .area2 > .content > .container > .line {
+        width: 100%;
+        height: 1px;
+        background-color: #000000;
+        margin: 70px 0 40px 0;
+    }
+    .area2 > .content > .container > .item-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .area2 > .content > .container > .item-box div {
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .area2 > .content > .container > .item-box > .info-box {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 40px;
+    }
+    .area2 > .content > .container > .item-box > .title {
+        font-size: 24px;
+    }
+
+    .area2 > .content > .container > .item-box > .text-box {
+        margin: 20px 0 0 0;
+        line-height: 2em;
+    }
+
+    .area2 > .content > .container > .item-box > .text-box p {
+        font-size: 18px;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.9);
+    }
+
+    /* --------- */
+
+    .area3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 80px 0;
+    }
+    .area3 > .content {
+        width: calc(100% - 530px);
+        flex-direction: column;
+        max-width: 1280px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 0 100px;
+    }
+
+    .area3 > .content > .form-box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .area3 form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .area3 form label {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+    }
+
+    .area3 form input {
+        height: 40px;
+        border: #b4b4b4 solid 1px;
+        font-size: 24px;
+    }
+
+    .area3 form select {
+        height: 40px;
+        font-size: 16px;
+        border: #b4b4b4 solid 1px;
+    }
+
+    .area3 form .name {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .area3 form .phone {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .area3 form .line {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .area3 form .require {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .area3 form .select {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .area3 form .time {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0 0 20px 0;
+    }
+
+    .area3 form .meeting {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0 0 20px 0;
+    }
+
+    .area3 form .remark {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .area3 form img {
+        width: 20px;
+        height: 20px;
+        margin: 0 10px 0 0;
+    }
+
+    .area3 form textarea {
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        border: #b4b4b4 solid 1px;
+    }
+
+    /* 自定義的radio按鈕 */
+    input[type='radio'] {
+        appearance: none;
+        -webkit-appearance: none;
+        width: 18px !important;
+        height: 18px !important;
+        border: 2px solid #ffffff; /* 外圈顏色 */
+        border-radius: 50%;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+        margin-right: 10px;
+    }
+
+    /* radio按鈕被選擇時的內圈顏色 */
+    input[type='radio']:checked::before {
+        content: '';
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #ffffff; /* 內圈顏色 */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: #007bff solid 4px;
+    }
+    .area3 form button {
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0f62fe;
+        border: none;
+        color: #ffffff;
+        font-weight: 700;
+        gap: 10px;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    .area3 form button img {
+        width: 15px;
+        height: 15px;
+        margin: 0;
+    }
+    .area3 form .bottom {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .area3 form .bottom .g-recaptcha {
+        width: 200px;
+        height: 40px;
+        /* background-color: #b4b4b4; */
+    }
+}

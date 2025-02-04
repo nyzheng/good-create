@@ -1,0 +1,530 @@
+@media screen and (min-width: 768px) {
+    /* 手機版隱藏 */
+    .mobile {
+        display: none !important;
+    }
+    /* 手機版隱藏 */
+
+    .article-container nav {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 0 40px 0;
+    }
+    .article-container nav > .content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .breadcrumb {
+        list-style: none;
+        display: flex;
+    }
+    .breadcrumb li {
+        margin-right: 5px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .breadcrumb li + li:before {
+        content: '/';
+        margin-right: 5px;
+    }
+    .breadcrumb a {
+        text-decoration: none;
+        color: #007bff;
+    }
+    .breadcrumb a:hover {
+        text-decoration: underline;
+    }
+
+    .index-container {
+        width: 100%;
+    }
+
+    .area1 {
+        width: 100%;
+        background-image: url('/images/article-bannenr.png');
+        height: 600px;
+        position: relative;
+        background-size: cover; /* 讓圖片覆蓋整個區域 */
+        background-position: center; /* 讓圖片居中 */
+        background-repeat: no-repeat; /* 防止圖片重複 */
+    }
+
+    .area1 > .content {
+        width: 100%;
+    }
+
+    .area1 > .content > .text-box {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        animation: area1slide 1s ease-in-out forwards;
+    }
+
+    @keyframes area1slide {
+        0% {
+            right: -1000px;
+            opacity: 0;
+        }
+        100% {
+            right: -100px;
+            opacity: 1;
+        }
+    }
+
+    .area1 > .content > .text-box > .title-1 {
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #d17a0d;
+    }
+
+    .area1 > .content > .text-box > .title-2 {
+        font-size: 40px;
+        font-weight: 700;
+        color: #df7009;
+        text-align: right;
+    }
+
+    .area1 > .content > .text-box > .title-3 {
+        font-size: 40px;
+        font-weight: 700;
+        color: #df7009;
+        letter-spacing: 0.2em;
+        color: #000000;
+        text-align: right;
+    }
+
+    /* --------- */
+    .area2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        padding: 100px 0 80px 0;
+    }
+
+    .area2 > .content {
+        width: calc(100% - 400px);
+        max-width: 1280px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        position: relative;
+    }
+    .area2 > .background-gradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, #d17a0d, #ffffff);
+        z-index: -1; /* 確保背景在其他內容之下 */
+    }
+
+    .area2 > .content > .arrow {
+        width: 90px;
+        margin: 0 40px 10px 0;
+        /* position: absolute;
+        top: -50px;
+        left: -150px; */
+    }
+
+    .area2 > .content > .arrow > img {
+        width: 100%;
+    }
+
+    .area2 > .content > .title-box {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .area2 > .content > .title-box > .title {
+        width: calc(100% - 300px);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .area2 > .content > .title-box .title-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+    }
+
+    .area2 > .content > .title-box .title-1 p {
+        font-size: 18px;
+        font-weight: 500 !important;
+    }
+
+    .area2 > .content > .title-box .title-1 h2 {
+        font-weight: 500;
+        font-size: 24px;
+        position: absolute;
+        left: 0;
+        animation: area2_h2 1s ease-in-out forwards;
+    }
+
+    @keyframes area2_h2 {
+        0% {
+            left: -200px;
+            opacity: 0;
+        }
+        100% {
+            right: 0px;
+            opacity: 1;
+        }
+    }
+
+    .area2 > .content > .title-box .title-1 h2 .area2 > .content > .title-box div {
+        display: flex;
+        align-items: flex-start;
+    }
+    .area2 > .content > .title-box .title-2 {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+        margin: 0 0 0 20px;
+        white-space: nowrap;
+        animation: area2_title_slide 1s ease-in-out forwards;
+        position: absolute;
+    }
+
+    @keyframes area2_title_slide {
+        0% {
+            right: -200px;
+            opacity: 0;
+        }
+        100% {
+            right: 0px;
+            opacity: 1;
+        }
+    }
+
+    .area2 > .content > .title-box .title-3 {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+    }
+
+    .area2 > .content .line {
+        width: 100%;
+        height: 1px;
+        background-color: #000000;
+        margin: 10px 0 20px 0;
+    }
+
+    .area2 > .content > .item-box {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        margin: 60px 0 0 0;
+    }
+
+    .area2 > .content > .item-box > .item {
+        width: calc((100% - 30px) / 4);
+    }
+
+    .area2 > .content > .item-box > .item > .img-box {
+        width: 100%;
+        position: relative; /* Ensure the overlay is positioned relative to the img-box */
+        transition: transform 0.3s ease-in-out; /* Smooth transition for the zoom effect */
+        z-index: 1; /* Set initial z-index to ensure it's above other content */
+    }
+
+    .area2 > .content > .item-box > .item > .img-box:hover {
+        transform: scale(1.2); /* Scale up the img-box */
+        z-index: 2; /* Increase z-index on hover to ensure it stays on top */
+    }
+
+    .area2 .item .img-box::after {
+        content: ''; /* Empty content for the overlay */
+        position: absolute; /* Absolute positioning to cover the img-box */
+        z-index: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(236, 174, 59, 0.5); /* Semi-transparent overlay */
+        opacity: 0; /* Start with the overlay invisible */
+        transition: opacity 0.3s ease-in-out; /* Smooth transition for the overlay appearance */
+    }
+    .area2 .item .img-box:hover::after {
+        opacity: 1; /* Show the overlay on hover */
+    }
+
+    .area2 .item .img-box .overlay-text {
+        width: 20px;
+        position: absolute; /* 绝对定位覆盖整个 img-box */
+        top: 40px;
+        right: 10px;
+        color: #000000; /* 文字颜色为白色 */
+        font-size: 16px; /* 文字大小可以根据需要调整 */
+        text-align: center; /* 文字居中 */
+        opacity: 0; /* 初始状态为不可见 */
+        transition: opacity 0.3s ease-in-out; /* 文字出现的过渡 */
+        pointer-events: none; /* 遮罩上的文字不影响鼠标事件 */
+        z-index: 10; /* Ensure text is above overlay */
+        font-weight: 700;
+    }
+    .area2 .item .img-box:hover .overlay-text {
+        opacity: 1; /* 鼠标悬停时显示文字 */
+        width: 20px;
+        display: flex;
+        flex-direction: column;
+        z-index: 99;
+    }
+    .area2 > .content > .item-box > .item > .img-box > img {
+        width: 100%;
+        z-index: 100;
+    }
+
+    .area2 > .content > .item-box > .item > .item-title {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .area2 > .content > .item-box > .item > .item-title > img {
+        width: 100px;
+    }
+    .area2 > .content > .item-box > .item > .item-title > p {
+        font-weight: 700;
+    }
+
+    /* --------- */
+
+    .area3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 80px 0;
+    }
+    .area3 > .content {
+        width: calc(100% - 400px);
+        max-width: 1280px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 100px;
+        position: relative;
+    }
+    .area3 > .content .circle {
+        background: radial-gradient(circle, rgba(216, 128, 28, 0.8) 40%, rgba(247, 182, 108, 0.05) 70%);
+        position: absolute;
+        z-index: -10;
+        top: -250px;
+        right: -20px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: area3_circle 3s ease-in-out forwards;
+        animation-play-state: paused; /* 初始化為暫停狀態 */
+    }
+
+    @keyframes area3_circle {
+        0% {
+            right: -20px;
+            top: -250px;
+            width: 40px;
+            height: 40px;
+        }
+        50% {
+            right: 80%;
+            top: 50%;
+            width: 400px;
+            height: 400px;
+        }
+        100% {
+            right: -60px;
+            top: calc(100% - 300px);
+        }
+    }
+
+    .area3 > .content .circle img {
+        width: 100%;
+        max-width: 100px;
+    }
+    .area3 > .content > .left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .area3 > .content > .left > ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .area3 > .content > .left > ul li {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .area3 > .content > .left > ul li a {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 700;
+    }
+
+    .area3 > .content > .left > ul li span {
+        display: block;
+        width: 5px;
+        height: 8px;
+        clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 100%, 50% 50%, 0% 0%);
+        background-color: #000000;
+    }
+
+    .area3 > .content > .right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        flex: 2;
+    }
+
+    .area3 > .content > .right > h4 {
+        width: 100%;
+        text-align: left;
+        font-size: 36px;
+        color: #808080;
+        margin: 0 0 40px 0;
+    }
+
+    .area3 > .content > .right > .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .area3 > .content > .right > .container > .item-box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        margin: 0 0 40px 0;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .area3 > .content > .right > .container > .item-box > .item {
+        width: calc((100% - 40px) / 2);
+    }
+    .area3 > .content > .right > .container > .item-box > .item > .img-box > img {
+        width: 100%;
+    }
+
+    .area3 > .content > .right > .container > .item-box > .item > .img-box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .area3 > .content > .right > .container > .item-box > .item > .text-box {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .area3 > .content > .right > .container > .item-box > .item > .text-box > .tag {
+        font-weight: 700;
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    .area3 > .content > .right > .container > .item-box > .item > .text-box > .item-title {
+        margin: 10px 0;
+        font-weight: 500;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.9);
+    }
+    .area3 > .content > .right > .container > .item-box > .item > .text-box > .item-intro {
+        height: 50px;
+        margin: 0 0 20px 0;
+        /* font-weight: 700; */
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.9);
+        overflow: hidden;
+        text-overflow: ellipsis; /* 将超出的文本变成省略号 */
+    }
+
+    .area3 > .content > .right > .container > .item-box > .item > .text-box > .item-more {
+        font-weight: 700;
+    }
+
+    .area3 > .content > .right > .page-navi {
+        width: 100%;
+    }
+
+    .area3 > .content > .right > .page-navi > ul {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .area3 > .content > .right > .page-navi > ul li {
+    }
+
+    .area3 > .content > .right > .page-navi > ul li a {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: #c7c7c7 1px solid;
+        font-weight: 700;
+        color: #c7c7c7;
+    }
+
+    .area3 > .content > .right > .page-navi > ul li a:hover {
+        border: #747474 1px solid;
+        color: #747474;
+    }
+
+    .area3 > .content > .right > .page-navi .ellipsis a {
+        align-items: flex-start;
+        width: 40px;
+        border-radius: 20px;
+    }
+}

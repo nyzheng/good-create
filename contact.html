@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/header.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/contact.css" />
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdkVBUqAAAAAAQ4JhoXGAakKpdRYW6ik5iPDx1a"></script>
+    </head>
+    <body>
+        <input id="menu-control" type="checkbox" />
+        <header>
+            <label id="MenuControl" for="menu-control">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav>
+                <a href="/">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="" />
+                    </div>
+                </a>
+
+                <div class="menu-container">
+                    <ul class="menu">
+                        <li>
+                            <a href="javascript:;">
+                                <span>首頁</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span>關於好創</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span>服務項目</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span>好創案例</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="contact">
+                        <a href="javascript:;">聯絡我們 0937305247</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="contact-container">
+            <div class="area1">
+                <div class="content">
+                    <div class="text-box">
+                        <p class="title-2">CONTACT</p>
+                        <p class="title-3">US</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="area2">
+                <div class="content">
+                    <div class="circle"><img src="/images/contact-1.png" alt="" /></div>
+                    <div class="arrow"><img src="/images/arrow-2.png" alt="" /></div>
+                    <div class="container">
+                        <!-- 電腦版 -->
+                        <div class="title-box pc">
+                            <div class="title-1"><p>CONTACT US</p></div>
+                            <div class="title-4">
+                                <p class="title-2">聯絡我們</p>
+                                <p class="title-3">協助所有的客人都是你的客人?</p>
+                            </div>
+                        </div>
+                        <div class="line pc"></div>
+
+                        <!-- 手機版 -->
+                        <!-- <div class="title-box mobile">
+                        <div>
+                            <p class="title-2">服務流程</p>
+                            <p class="title-1">SERVICE PROCESS</p>
+                        </div>
+                        <div class="line mobile"></div>
+
+                        <div>
+                            <p class="title-3">以始為終-創業陪跑者</p>
+                        </div>
+                    </div> -->
+                        <div class="item-box">
+                            <div class="text-box">
+                                <p>
+                                    好創以往也是從一人品牌行銷做起，了解中小企業的行銷困難，明白大多數品牌皆有產品好卻乏人問津的困境，因此好創整合了政府資源，協助申請企業內訓，提升員工對於行銷工具的運用率，後續搭配好創行銷專案，運用網路行銷各路利器
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="area3">
+                <div class="content">
+                    <div class="form-box">
+                        <form action="submit.php" method="post">
+                            <div class="name">
+                                <label for="name" style="margin-bottom: 10px">
+                                    <img src="/images/contact-8.png" alt="" />您的稱呼<span style="color: red">*</span>
+                                </label>
+                                <input type="text" id="name" name="name" required /><br />
+                            </div>
+
+                            <div class="phone">
+                                <label for="phone" style="margin-bottom: 10px">
+                                    <img src="/images/contact-2.png" alt="" />連絡電話<span style="color: red">*</span>
+                                </label>
+                                <input type="tel" id="phone" name="phone" required /><br />
+                            </div>
+
+                            <div class="line">
+                                <label for="line" style="margin-bottom: 10px">
+                                    <img src="/images/contact-3.png" alt="" />Line
+                                </label>
+                                <input type="text" id="line" name="line" /><br />
+                            </div>
+
+                            <div class="require">
+                                <label for="content" style="margin-bottom: 10px">
+                                    <img src="/images/contact-4.png" alt="" />需求內容
+                                </label>
+                                <select id="content" name="content">
+                                    <option value="other">其他</option></select
+                                ><br />
+                            </div>
+
+                            <div class="meeting">
+                                <label for="meeting">
+                                    <img src="/images/contact-5.png" alt="" />行會談方式<span style="color: red"
+                                        >*</span
+                                    >
+                                </label>
+                                <div class="select">
+                                    <input type="radio" id="online" name="meeting" value="online" checked />
+                                    <label for="online" style="margin-right: 20px">線上會談</label>
+                                    <input type="radio" id="face-to-face" name="meeting" value="face-to-face" />
+                                    <label for="face-to-face" style="margin-right: 20px">見面會談</label>
+                                    <input type="radio" id="both" name="meeting" value="both" />
+                                    <label for="both" style="margin-right: 20px">皆可</label><br />
+                                </div>
+                            </div>
+
+                            <div class="time">
+                                <label for="time">
+                                    <img src="/images/contact-6.png" alt="" />可選時間段<span style="color: red"
+                                        >*</span
+                                    >
+                                </label>
+                                <div class="select">
+                                    <input type="radio" id="morning" name="time" value="morning" required />
+                                    <label for="morning" style="margin-right: 20px">上午（09:00-12:00）</label>
+                                    <input type="radio" id="afternoon" name="time" value="afternoon" />
+                                    <label for="afternoon" style="margin-right: 20px">中午（13:00-17:00）</label>
+                                    <input type="radio" id="evening" name="time" value="evening" />
+                                    <label for="evening" style="margin-right: 20px">晚上（18:00-20:00）</label
+                                    ><br /><br />
+                                </div>
+                            </div>
+                            <div class="remark">
+                                <label for="remarks" style="margin-bottom: 20px">
+                                    <img src="/images/contact-7.png" alt="" />備註
+                                </label>
+                                <textarea id="remarks" name="remarks"></textarea><br /><br />
+                            </div>
+
+                            <div class="bottom">
+                                <div class="g-recaptcha" data-sitekey="你的站点密钥"></div>
+                                <button type="submit">送出 <img src="/images/arrow-4.png" alt="" /></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="content">
+                <div class="footer-box">
+                    <div class="footer-1">
+                        <div class="logo"><img src="/images/logo.png" alt="" /></div>
+                        <div class="social">
+                            <img src="/images/line.png" alt="" />
+                            <img src="/images/facebook.png" alt="" />
+                            <img src="/images/instagram.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="footer-2"><img src="/images/map.png" alt="" /></div>
+                    <div class="footer-3">
+                        <div class="item">
+                            <img src="/images/location.png" alt="" />
+                            <p>地址 : 請客戶提供地址請客戶提供地址請客戶提供地址</p>
+                        </div>
+                        <div class="item">
+                            <img src="/images/mail.png" alt="" />
+                            <p>信箱 : j80790305@gmail.com</p>
+                        </div>
+                        <div class="item">
+                            <img src="/images/phone.png" alt="" />
+                            <p>手機 : 0937305247</p>
+                        </div>
+                        <div class="item">
+                            <img src="/images/member.png" alt="" />
+                            <p>統編 : 0000000000</p>
+                        </div>
+                    </div>
+                    <div class="footer-4">
+                        <div class="item">
+                            <a href="javascript:;">首頁</a><a href="javascript:;">文章專區</a
+                            ><a href="javascript:;">使用者條款</a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:;">關於好創</a><a href="javascript:;">好創案例</a
+                            ><a href="javascript:;">聯絡我們</a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:;">使用者條款</a><a href="javascript:;">防詐騙宣導</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">Copyright © 2024 好創行銷有限公司 All rights reserved.</div>
+            </div>
+        </footer>
+    </body>
+
+    <script src="/js/contact.js"></script>
+    <script>
+        function onClick(e) {
+            e.preventDefault()
+            grecaptcha.enterprise.ready(async () => {
+                const token = await grecaptcha.enterprise.execute('6LdkVBUqAAAAAAQ4JhoXGAakKpdRYW6ik5iPDx1a', {
+                    action: 'LOGIN',
+                })
+            })
+        }
+    </script>
+</html>

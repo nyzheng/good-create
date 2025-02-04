@@ -1,0 +1,2987 @@
+@media screen and (max-width: 768px) {
+    .pc {
+        display: none !important;
+    }
+    .about-container {
+        width: 100%;
+    }
+
+    .area1 {
+        width: 100%;
+        background-image: url('/images/about-banner.png');
+        height: 600px;
+        position: relative;
+        background-size: cover; /* 讓圖片覆蓋整個區域 */
+        background-position: center; /* 讓圖片居中 */
+        background-repeat: no-repeat; /* 防止圖片重複 */
+    }
+
+    .area1 > .content {
+        width: 100%;
+    }
+
+    .area1 > .content > .text-box {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        animation: area1slide 1s ease-in-out forwards;
+    }
+
+    @keyframes area1slide {
+        0% {
+            right: -200px;
+            opacity: 0;
+        }
+        100% {
+            right: -100px;
+            opacity: 1;
+        }
+    }
+
+    .area1 > .content > .text-box > .title-1 {
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #d17a0d;
+    }
+
+    .area1 > .content > .text-box > .title-2 {
+        font-size: 40px;
+        font-weight: 700;
+        color: #df7009;
+        letter-spacing: 0.2em;
+        color: #ffffff;
+        text-align: right;
+    }
+
+    .area1 > .content > .text-box > .title-3 {
+        font-size: 40px;
+        font-weight: 700;
+        color: #df7009;
+        text-align: right;
+        text-shadow: rgba(220, 228, 107, 0.959) 0px 2px 5px;
+    }
+
+    /* --------- */
+    .area2 {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .area2 > .content {
+        /* width: calc(100% - 600px); */
+        width: 40%;
+        max-width: 1280px;
+        margin: 0 200px 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        z-index: 99;
+    }
+
+    .area2 > .content > .circle {
+        background: radial-gradient(circle, rgba(216, 128, 28, 0.8) 40%, rgba(247, 182, 108, 0.05) 70%);
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        position: absolute;
+        z-index: -10;
+        top: -200px;
+        right: -60px;
+        animation: area2_circle 2s ease-in-out forwards;
+    }
+
+    @keyframes area2_circle {
+        0% {
+            top: -200px;
+            right: -60px;
+            opacity: 0;
+        }
+        100% {
+            width: 400px;
+            height: 400px;
+            top: 50px;
+            right: calc(180%);
+        }
+    }
+    .area2 > .content > .circle > img {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .circle.animate {
+        width: 400px !important; /* 原始大小的10倍 */
+        height: 400px !important; /* 原始大小的10倍 */
+    }
+    .area2 > .content > .arrow {
+        width: 90px;
+        position: absolute;
+        top: -90px;
+        left: -110px;
+    }
+
+    .area2 > .content > .arrow > img {
+        width: 100%;
+    }
+
+    .area2 > .content > .title-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: -40px;
+        animation: area2_slideIn 1s ease-in-out forwards;
+    }
+
+    @keyframes area2_slideIn {
+        0% {
+            left: 500px;
+            opacity: 0;
+        }
+        100% {
+            left: 0;
+            opacity: 1;
+        }
+    }
+
+    .area2 > .content > .title-1 {
+        font-size: 60px;
+        font-weight: 700;
+        -webkit-text-stroke: 1px #e59100;
+        letter-spacing: 0.2em;
+        color: transparent;
+        position: absolute;
+        top: -80px;
+        left: -400px;
+        animation: area2_slideIn_1 1s ease-in-out forwards;
+    }
+
+    @keyframes area2_slideIn_1 {
+        0% {
+            top: -150px;
+            left: -400px;
+            opacity: 0;
+        }
+        100% {
+            top: -80px;
+            left: -400px;
+            opacity: 1;
+        }
+    }
+
+    .area2 > .content > .title-box div {
+        display: flex;
+        align-items: flex-end;
+    }
+    .area2 > .content > .title-box .title-2 {
+        font-size: 28px;
+        font-weight: 700;
+        color: #000000;
+        margin: 0 40px 0 0;
+    }
+
+    .area2 > .content > .title-box .title-3 {
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+        opacity: 0.9;
+    }
+
+    .area2 > .content > .line {
+        width: 100%;
+        height: 1px;
+        background-color: #000000;
+        margin: 10px 0 20px 0;
+    }
+
+    .area2 > .content > .text-box {
+        width: 100%;
+    }
+
+    .area2 > .content > .text-box > p {
+        font-size: 24px;
+        line-height: 2em;
+        font-weight: 700;
+    }
+    .area2 > .content > .link {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin: 20px 0 0 0;
+    }
+
+    .area2 > .content > .link > a {
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e59100;
+        padding: 10px 20px;
+        border-radius: 0 40px 40px 0;
+        box-shadow: rgba(220, 228, 107, 0.959) 0px 5px 15px;
+    }
+
+    .area2 > .content > .link > a > .more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .area2 .content > .link > a p {
+        color: #ffffff;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+
+    .area2 > .content > .link > a > .more img {
+        width: 30px;
+    }
+
+    /* --------- */
+
+    .area3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 80px 0;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .area3 > .content {
+        width: 900px;
+        /* width: calc(100% - 1000px); */
+        flex-direction: column;
+        max-width: 1280px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .area3 > .content > .carousel {
+        /* width: 900px; */
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .area3 > .content > .carousel img {
+        border-radius: 20px;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .area3 > .content > .carousel > .item {
+        width: 100%;
+        transition: all 0.5s ease; /* 添加过渡效果 */
+    }
+
+    .area3 > .content > .carousel > .item-1 {
+        position: absolute;
+        right: calc(100% + 20px);
+    }
+    .area3 > .content > .carousel > .item-2 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .area3 > .content > .carousel > .item-3 {
+        position: absolute;
+        left: calc(100% + 20px);
+    }
+
+    .area3 .controls {
+        /* width: 100%; */
+        width: calc(100% + 160px);
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 100;
+    }
+    .area3 > .content button {
+        background-color: transparent;
+        border: none;
+    }
+
+    .inactive::after {
+        content: '';
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        background: linear-gradient(to bottom, rgba(236, 174, 59, 0.5), rgba(236, 174, 59, 0));
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    /* --------- */
+    .area4 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        padding: 0 0 40px 0;
+    }
+
+    .area4 > .content {
+        width: calc(100% - 400px);
+        max-width: 1280px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        position: relative;
+    }
+
+    .area4 > .content > .arrow {
+        width: 90px;
+        margin: 0 40px 30px 0;
+        /* position: absolute;
+        top: -50px;
+        left: -150px; */
+    }
+
+    .area4 > .content > .arrow > img {
+        width: 100%;
+    }
+
+    .area4 > .content > .title-box {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .area4 > .content > .title-box > .title {
+        width: calc(100% - 400px);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .area4 > .content > .title-box .title-1 {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 20px;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+        white-space: nowrap;
+        position: absolute;
+        left: 0;
+        top: -50px;
+        animation: area4_title 1s ease-in-out forwards;
+    }
+
+    .area4 > .content > .title-box .title-1 p {
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+        opacity: 0.9;
+    }
+
+    @keyframes area4_title {
+        0% {
+            left: -200px;
+            top: -50px;
+            opacity: 0;
+        }
+        100% {
+            left: 0px;
+            top: -50px;
+            opacity: 1;
+        }
+    }
+
+    .area4 > .content > .title-box .title-1 h2 .area4 > .content > .title-box div {
+        display: flex;
+        align-items: flex-start;
+    }
+    .area4 > .content > .title-box .title-2 {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        font-size: 60px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        -webkit-text-stroke: 1px #e59100;
+        color: transparent;
+        white-space: nowrap;
+        position: absolute;
+        top: 10px;
+        animation: area4_title_slide 1s ease-in-out forwards;
+    }
+
+    @keyframes area4_title_slide {
+        0% {
+            right: -200px;
+            opacity: 0;
+        }
+        100% {
+            right: -100px;
+            opacity: 1;
+        }
+    }
+
+    .area4 > .content > .title-box .title-3 {
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+    }
+
+    .area4 > .content .line {
+        width: 100%;
+        height: 1px;
+        background-color: #000000;
+        margin: 10px 0 20px 0;
+    }
+
+    /* ......... */
+
+    .area5 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 0 160px 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .area5 > .content {
+        width: calc(100% - 400px);
+        max-width: 1280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 30px;
+    }
+
+    .area5 > .content > p {
+        font-weight: 700;
+        line-height: 2em;
+    }
+
+    .area5 > .circle {
+        width: 500px;
+        height: 500px;
+        background: radial-gradient(circle, rgba(216, 128, 28, 0.8) 40%, rgba(247, 182, 108, 0.05) 70%);
+        position: absolute;
+        right: -100px;
+        top: 40%;
+    }
+
+    .area5 > .circle > img {
+        width: 100%;
+        max-width: 150px;
+        position: absolute;
+        top: 40%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    .area6 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        padding: 120px 0;
+        background-image: url('/images/home-area6-bg.png');
+        background-size: cover; /* 讓圖片覆蓋整個區域 */
+        background-position: center; /* 讓圖片居中 */
+        background-repeat: no-repeat; /* 防止圖片重複 */
+        overflow: hidden;
+    }
+
+    .area6 > .content {
+        width: calc(100% - 400px);
+        max-width: 1280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+    }
+    .area6 > .background-gradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* 確保背景在其他內容之下 */
+        background-image: url('/images/home-area3-bg.png');
+        background-size: cover; /* 讓圖片覆蓋整個區域 */
+        background-position: center; /* 讓圖片居中 */
+        background-repeat: no-repeat; /* 防止圖片重複 */
+    }
+
+    .area6 > .content .arrow {
+        width: 90px;
+        position: absolute;
+        top: -40px;
+        left: calc(100% - 100px);
+    }
+
+    .area6 > .content > .arrow > img {
+        width: 100%;
+    }
+
+    .area6 > .content > .title-box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        position: relative;
+    }
+
+    .area6 > .content > .title-box > .title {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 350px;
+    }
+
+    .area6 > .content > .title-box > .title > .container {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        gap: 40px;
+        position: absolute;
+        animation: area6_slideIn 1s ease-in-out forwards;
+    }
+
+    @keyframes area6_slideIn {
+        0% {
+            left: 200px;
+            opacity: 0;
+            overflow: hidden;
+        }
+        100% {
+            left: 0;
+            opacity: 1;
+        }
+    }
+    .area6 > .content > .title-box .title-1 {
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+    }
+    .area6 > .content > .title-box .title-3 {
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+        opacity: 0.9;
+    }
+    .area6 > .content > .title-box div {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .area6 > .content > .title-box .line {
+        width: 50%;
+        height: 1px;
+        background-color: #000000;
+        position: absolute;
+        top: 40px;
+        left: 0;
+    }
+    .area6 > .content > .title-box .title-2 {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+        position: absolute;
+        animation: area6_slideIn_2 1s ease-in-out forwards;
+    }
+
+    @keyframes area6_slideIn_2 {
+        0% {
+            left: -200px;
+            opacity: 0;
+            overflow: hidden;
+        }
+        100% {
+            left: 0;
+            opacity: 1;
+        }
+    }
+    .area6 > .area6 > .content > .title-box .title-3 {
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+        margin: 0 0 0 20px;
+    }
+
+    .area6 > .content .container .line {
+        width: calc(100% + 200px);
+        height: 1px;
+        background-color: #000000;
+        margin: 10px 0 20px 0;
+    }
+
+    .area6 > .content > .item-box {
+        width: 100%;
+        display: flex;
+        gap: 30px;
+        margin: 120px 0 0 0;
+    }
+
+    .area6 > .content > .item-box > .item {
+        width: calc((100% - 30px) / 4);
+    }
+
+    .area6 > .content > .item-box > .item > .img-box {
+        width: 100%;
+        position: relative; /* Ensure the overlay is positioned relative to the img-box */
+        transition: transform 0.3s ease-in-out; /* Smooth transition for the zoom effect */
+        z-index: 1; /* Set initial z-index to ensure it's above other content */
+    }
+
+    .area6 > .content > .item-box > .item > .img-box:hover {
+        transform: scale(1.2); /* Scale up the img-box */
+        z-index: 2; /* Increase z-index on hover to ensure it stays on top */
+    }
+
+    .area6 .item .img-box::after {
+        content: ''; /* Empty content for the overlay */
+        position: absolute; /* Absolute positioning to cover the img-box */
+        z-index: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(243, 170, 34, 0.9), rgba(236, 174, 59, 0));
+        opacity: 0; /* Start with the overlay invisible */
+        transition: opacity 0.3s ease-in-out; /* Smooth transition for the overlay appearance */
+    }
+    .area6 .item .img-box:hover::after {
+        opacity: 1; /* Show the overlay on hover */
+    }
+
+    .area6 .item .img-box .overlay-text {
+        width: 20px;
+        position: absolute; /* 绝对定位覆盖整个 img-box */
+        top: 40px;
+        right: 10px;
+        color: #000000; /* 文字颜色为白色 */
+        font-size: 16px; /* 文字大小可以根据需要调整 */
+        text-align: center; /* 文字居中 */
+        opacity: 0; /* 初始状态为不可见 */
+        transition: opacity 0.3s ease-in-out; /* 文字出现的过渡 */
+        pointer-events: none; /* 遮罩上的文字不影响鼠标事件 */
+        z-index: 10; /* Ensure text is above overlay */
+        font-weight: 700;
+    }
+    .area6 .item .img-box:hover .overlay-text {
+        opacity: 1; /* 鼠标悬停时显示文字 */
+        width: 20px;
+        display: flex;
+        flex-direction: column;
+        z-index: 99;
+    }
+    .area6 > .content > .item-box > .item > .img-box > img {
+        width: 100%;
+        z-index: 100;
+    }
+
+    .area6 > .content > .item-box > .item > .item-title {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .area6 > .content > .item-box > .item > .item-title > img {
+        width: 100px;
+    }
+    .area6 > .content > .item-box > .item > .item-title > p {
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    /* 奇數item */
+    .area6 > .content > .item-box > .odd {
+        margin: 20px 0 0 0;
+    }
+    .area6 > .content > .item-box > .odd > .item-title {
+        margin: 0 0 20px 0;
+    }
+
+    .area6 > .content > .item-box > .odd > .item-title > p {
+        margin: 0 -40px 20px 0;
+    }
+    /* 奇數item */
+
+    /* 偶數item */
+    .area6 > .content > .item-box > .even {
+    }
+    .area6 > .content > .item-box > .even > .item-title {
+        margin: 20px 0 0 0;
+        justify-content: flex-start;
+    }
+
+    .area6 > .content > .item-box > .even > .item-title > p {
+        margin: 0 -40px 20px 0;
+    }
+    /* 偶數item */
+
+    /* --------- */
+
+    .area7 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        padding: 120px 0;
+        overflow: hidden;
+    }
+
+    .area7 > .circle {
+        background: radial-gradient(circle, rgba(216, 128, 28, 0.8) 40%, rgba(247, 182, 108, 0.05) 70%);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        padding: 40px;
+        position: absolute;
+        z-index: -10;
+        top: 20px;
+        left: 60px;
+        animation: area7_circle 2s ease-in-out forwards;
+    }
+
+    @keyframes area7_circle {
+        0% {
+            top: 20px;
+            left: 60px;
+        }
+        100% {
+            top: calc(100% - 400px);
+            left: calc(100% - 300px);
+            width: 400px;
+            height: 400px;
+            padding: 100px;
+        }
+    }
+
+    .area7 > .circle > img {
+        width: 100%;
+        position: relative;
+    }
+
+    .area7 > .content {
+        width: calc(100% - 400px);
+        max-width: 1280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+    }
+    .area7 > .content > .arrow {
+        width: 90px;
+        position: absolute;
+        top: 10px;
+        left: -150px;
+    }
+
+    .area7 > .content > .arrow > img {
+        width: 100%;
+    }
+
+    .area7 > .content > .title-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+        position: relative;
+    }
+
+    .area7 > .content > .title-box > .title {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .area7 > .content > .title-box .title-1 {
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        animation: area7slide 1s ease-in-out forwards;
+    }
+
+    @keyframes area7slide {
+        0% {
+            left: -200px;
+            opacity: 0;
+            overflow: hidden;
+        }
+        100% {
+            left: 0;
+            opacity: 1;
+        }
+    }
+
+    .area7 > .content > .title-box div {
+        display: flex;
+        align-items: flex-start;
+    }
+    .area7 > .content > .title-box .title-2 {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+        position: absolute;
+        top: 0;
+        right: 0;
+        /* animation: area7slide_1 1s ease-in-out forwards; */
+    }
+
+    @keyframes area7slide_1 {
+        0% {
+            left: -200px;
+            opacity: 0;
+            overflow: hidden;
+        }
+        100% {
+            left: 0;
+            opacity: 1;
+        }
+    }
+
+    .area7 > .content > .title-box .title-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        -webkit-text-stroke: 1px #e59100;
+        color: transparent;
+        position: absolute;
+        top: 0;
+        right: 0;
+        animation: area7slide_2 1s ease-in-out forwards;
+    }
+
+    @keyframes area7slide_2 {
+        0% {
+            top: -200px;
+            opacity: 0;
+            overflow: hidden;
+        }
+        100% {
+            top: 0;
+            opacity: 1;
+        }
+    }
+
+    .area7 > .content .line {
+        width: calc(100% - 220px);
+        height: 1px;
+        background-color: #000000;
+        position: absolute;
+        left: 0;
+        top: 100px;
+    }
+    .area7 > .content > .item-box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        margin: 160px 0 0 0;
+        flex-wrap: wrap; /* 添加這一行 */
+    }
+
+    .area7 > .content > .item-box > .item {
+        width: calc((100% - 240px) / 4);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        transition: transform 0.3s, filter 0.3s;
+    }
+
+    .area7 > .content > .item-box > .item img,
+    .area7 > .content > .item-box > .item p {
+        transition: transform 0.3s, filter 0.3s;
+    }
+
+    /* .area7 > .content > .item-box > .item:hover {
+        transform: scale(1.2);
+    }
+
+    .area7 > .content > .item-box > .item:hover img,
+    .area7 > .content > .item-box > .item:hover p {
+        filter: brightness(1.5);
+        transform: scale(1.1);
+    } */
+
+    /* .area7 > .content > .item-box > .item:hover img {
+        box-shadow: rgba(220, 228, 107, 0.959) 0px 5px 15px;
+    } */
+
+    .area7 > .content > .item-box > .item > img {
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    .area7 > .content > .item-box > .item > p {
+        color: #c58323;
+        font-weight: 700;
+        font-size: 16px;
+        margin: 40px 0 0 0;
+    }
+
+    .area7 > .content > .link {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 60px 0 0 0;
+    }
+
+    .area7 > .content > .link > a {
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e59100;
+        padding: 10px 20px;
+        border-radius: 0 40px 40px 0;
+        box-shadow: rgba(220, 228, 107, 0.959) 0px 5px 15px;
+    }
+
+    .area7 > .content > .link > a > .more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .area7 .content > .link > a p {
+        color: #ffffff;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+
+    .area7 > .content > .link > a > .more img {
+        width: 30px;
+    }
+    /* --------- */
+    .area8 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        padding: 120px 0;
+        background-image: url('/images/home-area8-bg.png');
+        background-size: cover; /* 讓圖片覆蓋整個區域 */
+        background-position: center; /* 讓圖片居中 */
+        background-repeat: no-repeat; /* 防止圖片重複 */
+        overflow: hidden;
+    }
+
+    .area8 > .content {
+        width: calc(100% - 400px);
+        max-width: 1280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+    }
+    .area8 > .background-gradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* 確保背景在其他內容之下 */
+        background-image: url('/images/about-area8-bg.png');
+        background-size: cover; /* 讓圖片覆蓋整個區域 */
+        background-position: center; /* 讓圖片居中 */
+        background-repeat: no-repeat; /* 防止圖片重複 */
+    }
+
+    .area8 > .content .arrow {
+        width: 90px;
+        position: absolute;
+        top: -40px;
+        left: calc(100% - 100px);
+    }
+
+    .area8 > .content > .arrow > img {
+        width: 100%;
+    }
+
+    .area8 > .content > .title-box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        position: relative;
+    }
+
+    .area8 > .content > .title-box > .title {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 200px;
+    }
+
+    .area8 > .content > .title-box > .title > .container {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        gap: 40px;
+        position: absolute;
+        animation: area8_slideIn 1s ease-in-out forwards;
+    }
+
+    @keyframes area8_slideIn {
+        0% {
+            left: 200px;
+            opacity: 0;
+            overflow: hidden;
+        }
+        100% {
+            left: 0;
+            opacity: 1;
+        }
+    }
+    .area8 > .content > .title-box .title-1 {
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+    }
+    .area8 > .content > .title-box .title-3 {
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+        opacity: 0.9;
+    }
+    .area8 > .content > .title-box div {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .area8 > .content > .title-box .line {
+        width: 70%;
+        height: 1px;
+        background-color: #000000;
+        position: absolute;
+        top: 40px;
+        left: 0;
+    }
+    .area8 > .content > .title-box .title-2 {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+        position: absolute;
+        animation: area8_slideIn_2 1s ease-in-out forwards;
+    }
+
+    @keyframes area8_slideIn_2 {
+        0% {
+            left: -200px;
+            opacity: 0;
+            overflow: hidden;
+        }
+        100% {
+            left: 0;
+            opacity: 1;
+        }
+    }
+    .area8 > .area8 > .content > .title-box .title-3 {
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+        margin: 0 0 0 20px;
+    }
+
+    .area8 > .content .container .line {
+        width: calc(100% + 200px);
+        height: 1px;
+        background-color: #000000;
+        margin: 10px 0 20px 0;
+    }
+
+    .area8 > .content > .item-box {
+        width: 100%;
+        display: flex;
+        gap: 30px;
+        margin: 120px 0 0 0;
+    }
+
+    .area8 > .content > .item-box > .item-box-content {
+        width: calc((100% - 60) / 3);
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .area8 > .content > .item-box > .item-2 {
+        margin: 120px 0 0 0;
+    }
+
+    .area8 > .content > .item-box > .item-3 {
+        margin: 60px 0 0 0;
+    }
+
+    .area8 > .content > .item-box .item {
+        width: 100%;
+        position: relative;
+    }
+
+    .area8 > .content > .item-box .item::after {
+        content: '';
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, rgba(236, 174, 59, 0.9), rgba(236, 174, 59, 0));
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .area8 > .content > .item-box .item:hover::after {
+        opacity: 1;
+    }
+
+    .area8 > .content > .item-box .item img {
+        width: 100%;
+    }
+
+    .area8 > .content > .item-box .text-box {
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+        margin: auto;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .area8 > .content > .item-box .text-box .title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .area8 > .content > .item-box .text-box .underline {
+        width: 50px;
+        height: 3px;
+        background-color: black;
+        margin-bottom: 20px;
+    }
+    .area8 > .content > .item-box .text-box .text {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.6;
+    }
+
+    .area9 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        padding: 80px 0;
+
+        overflow: hidden;
+    }
+
+    .area9 > .content {
+        width: calc(100% - 400px);
+        max-width: 1280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .area9 > .content > .arrow {
+        width: 90px;
+        position: absolute;
+        top: -50px;
+        left: -150px;
+    }
+
+    .area9 > .content > .arrow > img {
+        width: 100%;
+    }
+
+    .area9 > .content > .title-box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        position: relative;
+    }
+
+    .area9 > .content > .title-box > .title {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .area9 > .content > .title-box > .title > .container {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        gap: 40px;
+        position: absolute;
+        animation: area9_slideIn 1s ease-in-out forwards;
+    }
+
+    @keyframes area9_slideIn {
+        0% {
+            left: -500px;
+            opacity: 0;
+            overflow: hidden;
+        }
+        100% {
+            left: 0;
+            opacity: 1;
+        }
+    }
+    .area9 > .content > .title-box .title-1 {
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+    }
+
+    .area9 > .content > .title-box .title-3 {
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+        opacity: 0.9;
+    }
+
+    .area9 > .content > .title-box div {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .area9 > .content > .title-box .line {
+        width: calc(100% - 100px);
+        height: 1px;
+        background-color: #000000;
+        position: absolute;
+        top: 40px;
+        left: 0;
+    }
+    .area9 > .content > .title-box .title-2 {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        -webkit-text-stroke: 1px #e59100;
+        color: transparent;
+        position: absolute;
+        right: 0;
+
+        animation: area9_slideIn_2 1s ease-in-out forwards;
+    }
+
+    @keyframes area9_slideIn_2 {
+        0% {
+            top: -200px;
+            opacity: 0;
+        }
+        100% {
+            top: -60px;
+            opacity: 1;
+        }
+    }
+    .area9 > .area9 > .content > .title-box .title-3 {
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+        margin: 0 0 0 20px;
+    }
+
+    .area9 > .content .container .line {
+        width: calc(100% + 200px);
+        height: 1px;
+        background-color: #000000;
+        margin: 10px 0 20px 0;
+    }
+
+    .area9 > .content > .item-box {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        margin: 120px 0 0 0;
+    }
+
+    .area9 > .content > .item-box > .left {
+        width: 33.3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        color: #000000;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .area9 > .content > .item-box > .left > .info-box {
+        font-size: 16px;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .area9 > .content > .item-box > .left > .info-box div {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+    }
+
+    .area9 > .content > .item-box > .left .info-line p {
+    }
+
+    .area9 > .content > .item-box > .left .line {
+        width: 100%;
+        height: 1px;
+        background-color: #000000;
+        margin: 40px 0;
+    }
+
+    .area9 > .content > .item-box > .right {
+        width: 66.6%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .area9 > .content > .item-box > .right > img {
+        width: 100%;
+    }
+    .area9 > .content > .item-box > .left > .link {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        margin: 20px 0 0 0;
+    }
+
+    .area9 > .content > .item-box > .left .link > a {
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e59100;
+        padding: 10px 20px;
+        border-radius: 0 40px 40px 0;
+        box-shadow: rgba(220, 228, 107, 0.959) 0px 5px 15px;
+    }
+
+    .area9 > .content > .item-box > .left .link > a > .more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .area9 > .content > .item-box > .left .link > a > .more {
+    }
+    .area9 > .content > .item-box > .left .link > a p {
+        color: #ffffff;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+    .area9 > .content > .item-box > .left .link > a > .more img {
+        width: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* 手機版隱藏 */
+    .mobile {
+        display: none !important;
+    }
+    /* 手機版隱藏 */
+
+    .about-container {
+        width: 100%;
+    }
+
+    .area1 {
+        width: 100%;
+        background-image: url('/images/about-banner.png');
+        height: 600px;
+        position: relative;
+        background-size: cover; /* 讓圖片覆蓋整個區域 */
+        background-position: center; /* 讓圖片居中 */
+        background-repeat: no-repeat; /* 防止圖片重複 */
+    }
+
+    .area1 > .content {
+        width: 100%;
+    }
+
+    .area1 > .content > .text-box {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        animation: area1slide 1s ease-in-out forwards;
+    }
+
+    @keyframes area1slide {
+        0% {
+            right: -200px;
+            opacity: 0;
+        }
+        100% {
+            right: -100px;
+            opacity: 1;
+        }
+    }
+
+    .area1 > .content > .text-box > .title-1 {
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #d17a0d;
+    }
+
+    .area1 > .content > .text-box > .title-2 {
+        font-size: 40px;
+        font-weight: 700;
+        color: #df7009;
+        letter-spacing: 0.2em;
+        color: #ffffff;
+        text-align: right;
+    }
+
+    .area1 > .content > .text-box > .title-3 {
+        font-size: 40px;
+        font-weight: 700;
+        color: #df7009;
+        text-align: right;
+        text-shadow: rgba(220, 228, 107, 0.959) 0px 2px 5px;
+    }
+
+    /* --------- */
+    .area2 {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .area2 > .content {
+        /* width: calc(100% - 600px); */
+        width: 40%;
+        max-width: 1280px;
+        margin: 0 200px 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        z-index: 99;
+    }
+
+    .area2 > .content > .circle {
+        background: radial-gradient(circle, rgba(216, 128, 28, 0.8) 40%, rgba(247, 182, 108, 0.05) 70%);
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        position: absolute;
+        z-index: -10;
+        top: -200px;
+        right: -60px;
+        animation: area2_circle 2s ease-in-out forwards;
+    }
+
+    @keyframes area2_circle {
+        0% {
+            top: -200px;
+            right: -60px;
+            opacity: 0;
+        }
+        100% {
+            width: 400px;
+            height: 400px;
+            top: 50px;
+            right: calc(180%);
+        }
+    }
+    .area2 > .content > .circle > img {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .circle.animate {
+        width: 400px !important; /* 原始大小的10倍 */
+        height: 400px !important; /* 原始大小的10倍 */
+    }
+    .area2 > .content > .arrow {
+        width: 90px;
+        position: absolute;
+        top: -90px;
+        left: -110px;
+    }
+
+    .area2 > .content > .arrow > img {
+        width: 100%;
+    }
+
+    .area2 > .content > .title-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: -40px;
+        animation: area2_slideIn 1s ease-in-out forwards;
+    }
+
+    @keyframes area2_slideIn {
+        0% {
+            left: 500px;
+            opacity: 0;
+        }
+        100% {
+            left: 0;
+            opacity: 1;
+        }
+    }
+
+    .area2 > .content > .title-1 {
+        font-size: 60px;
+        font-weight: 700;
+        -webkit-text-stroke: 1px #e59100;
+        letter-spacing: 0.2em;
+        color: transparent;
+        position: absolute;
+        top: -80px;
+        left: -400px;
+        animation: area2_slideIn_1 1s ease-in-out forwards;
+    }
+
+    @keyframes area2_slideIn_1 {
+        0% {
+            top: -150px;
+            left: -400px;
+            opacity: 0;
+        }
+        100% {
+            top: -80px;
+            left: -400px;
+            opacity: 1;
+        }
+    }
+
+    .area2 > .content > .title-box div {
+        display: flex;
+        align-items: flex-end;
+    }
+    .area2 > .content > .title-box .title-2 {
+        font-size: 24px;
+        /* font-weight: 700; */
+        letter-spacing: 0.2em;
+        color: rgba(0, 0, 0, 0.9);
+        margin: 0 40px 0 0;
+    }
+
+    .area2 > .content > .title-box .title-3 {
+        font-size: 18px;
+        /* font-weight: 700; */
+        letter-spacing: 0.2em;
+        color: rgba(0, 0, 0, 0.9);
+    }
+
+    .area2 > .content > .line {
+        width: 100%;
+        height: 1px;
+        background-color: #000000;
+        margin: 10px 0 20px 0;
+    }
+
+    .area2 > .content > .text-box {
+        width: 100%;
+    }
+
+    .area2 > .content > .text-box > p {
+        font-size: 18px;
+        line-height: 2em;
+        color: rgba(0, 0, 0, 0.9);
+
+        /* font-weight: 700; */
+    }
+    .area2 > .content > .link {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin: 20px 0 0 0;
+    }
+
+    .area2 > .content > .link > a {
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e59100;
+        padding: 10px 20px;
+        border-radius: 0 40px 40px 0;
+        box-shadow: rgba(220, 228, 107, 0.959) 0px 5px 15px;
+    }
+
+    .area2 > .content > .link > a > .more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .area2 .content > .link > a p {
+        color: #ffffff;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+
+    .area2 > .content > .link > a > .more img {
+        width: 30px;
+    }
+
+    /* --------- */
+
+    .area3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 80px 0;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .area3 > .content {
+        width: 900px;
+        /* width: calc(100% - 1000px); */
+        flex-direction: column;
+        max-width: 1280px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .area3 > .content > .carousel {
+        /* width: 900px; */
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .area3 > .content > .carousel img {
+        border-radius: 20px;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .area3 > .content > .carousel > .item {
+        width: 100%;
+        transition: all 0.5s ease; /* 添加过渡效果 */
+    }
+
+    .area3 > .content > .carousel > .item-1 {
+        position: absolute;
+        right: calc(100% + 20px);
+    }
+    .area3 > .content > .carousel > .item-2 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .area3 > .content > .carousel > .item-3 {
+        position: absolute;
+        left: calc(100% + 20px);
+    }
+
+    .area3 .controls {
+        /* width: 100%; */
+        width: calc(100% + 160px);
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 100;
+    }
+    .area3 > .content button {
+        background-color: transparent;
+        border: none;
+    }
+
+    .inactive::after {
+        content: '';
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        background: linear-gradient(to bottom, rgba(236, 174, 59, 0.5), rgba(236, 174, 59, 0));
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    /* --------- */
+    .area4 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        padding: 0 0 40px 0;
+    }
+
+    .area4 > .content {
+        width: calc(100% - 400px);
+        max-width: 1280px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        position: relative;
+    }
+
+    .area4 > .content > .arrow {
+        width: 90px;
+        margin: 0 40px 10px 0;
+        /* position: absolute;
+        top: -50px;
+        left: -150px; */
+    }
+
+    .area4 > .content > .arrow > img {
+        width: 100%;
+    }
+
+    .area4 > .content > .title-box {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .area4 > .content > .title-box > .title {
+        width: calc(100% - 400px);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .area4 > .content > .title-box .title-1 {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 20px;
+        letter-spacing: 0.2em;
+        white-space: nowrap;
+        position: absolute;
+        left: 0;
+        top: -50px;
+        animation: area4_title 1s ease-in-out forwards;
+    }
+
+    .area4 > .content > .title-box .title-1 h2 {
+        font-size: 24px !important;
+        font-weight: 500 !important;
+        color: rgba(0, 0, 0, 0.9);
+    }
+
+    .area4 > .content > .title-box .title-1 p {
+        font-size: 18px;
+        /* font-weight: 700; */
+        color: rgba(0, 0, 0, 0.9);
+        opacity: 0.9;
+    }
+
+    @keyframes area4_title {
+        0% {
+            left: -200px;
+            top: -50px;
+            opacity: 0;
+        }
+        100% {
+            left: 0px;
+            top: -50px;
+            opacity: 1;
+        }
+    }
+
+    .area4 > .content > .title-box .title-1 h2 .area4 > .content > .title-box div {
+        display: flex;
+        align-items: flex-start;
+    }
+    .area4 > .content > .title-box .title-2 {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        font-size: 60px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        -webkit-text-stroke: 1px #e59100;
+        color: transparent;
+        white-space: nowrap;
+        position: absolute;
+        animation: area4_title_slide 1s ease-in-out forwards;
+    }
+
+    @keyframes area4_title_slide {
+        0% {
+            right: -200px;
+            opacity: 0;
+        }
+        100% {
+            right: -100px;
+            opacity: 1;
+        }
+    }
+
+    .area4 > .content > .title-box .title-3 {
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+    }
+
+    .area4 > .content .line {
+        width: 100%;
+        height: 1px;
+        background-color: #000000;
+    }
+
+    /* ......... */
+
+    .area5 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 0 160px 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .area5 > .content {
+        width: calc(100% - 400px);
+        max-width: 1280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 30px;
+    }
+
+    .area5 > .content > p {
+        font-size: 18px;
+        line-height: 2em;
+        color: rgba(0, 0, 0, 0.9);
+    }
+
+    .area5 > .circle {
+        width: 500px;
+        height: 500px;
+        background: radial-gradient(circle, rgba(216, 128, 28, 0.8) 40%, rgba(247, 182, 108, 0.05) 70%);
+        position: absolute;
+        right: -100px;
+        top: 40%;
+    }
+
+    .area5 > .circle > img {
+        width: 100%;
+        max-width: 150px;
+        position: absolute;
+        top: 40%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    .area6 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        padding: 120px 0;
+        background-image: url('/images/home-area6-bg.png');
+        background-size: cover; /* 讓圖片覆蓋整個區域 */
+        background-position: center; /* 讓圖片居中 */
+        background-repeat: no-repeat; /* 防止圖片重複 */
+        overflow: hidden;
+    }
+
+    .area6 > .content {
+        width: calc(100% - 400px);
+        max-width: 1280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+    }
+    .area6 > .background-gradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* 確保背景在其他內容之下 */
+        background-image: url('/images/home-area3-bg.png');
+        background-size: cover; /* 讓圖片覆蓋整個區域 */
+        background-position: center; /* 讓圖片居中 */
+        background-repeat: no-repeat; /* 防止圖片重複 */
+    }
+
+    .area6 > .content .arrow {
+        width: 90px;
+        position: absolute;
+        top: -60px;
+        left: calc(100% - 100px);
+    }
+
+    .area6 > .content > .arrow > img {
+        width: 100%;
+    }
+
+    .area6 > .content > .title-box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        position: relative;
+    }
+
+    .area6 > .content > .title-box > .title {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 350px;
+    }
+
+    .area6 > .content > .title-box > .title > .container {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        gap: 40px;
+        position: absolute;
+        top: -10px;
+        animation: area6_slideIn 1s ease-in-out forwards;
+    }
+
+    @keyframes area6_slideIn {
+        0% {
+            left: 200px;
+            opacity: 0;
+            overflow: hidden;
+        }
+        100% {
+            left: 0;
+            opacity: 1;
+        }
+    }
+    .area6 > .content > .title-box .title-1 {
+        font-size: 24px;
+        /* font-weight: 700; */
+        letter-spacing: 0.2em;
+        color: rgba(0, 0, 0, 0.9);
+    }
+    .area6 > .content > .title-box .title-3 {
+        font-size: 18px;
+        /* font-weight: 700; */
+        letter-spacing: 0.2em;
+        color: rgba(0, 0, 0, 0.9);
+    }
+    .area6 > .content > .title-box div {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .area6 > .content > .title-box .line {
+        width: 50%;
+        height: 1px;
+        background-color: #000000;
+        position: absolute;
+        top: 40px;
+        left: 0;
+    }
+    .area6 > .content > .title-box .title-2 {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+        position: absolute;
+        top: -100px;
+        animation: area6_slideIn_2 1s ease-in-out forwards;
+    }
+
+    @keyframes area6_slideIn_2 {
+        0% {
+            left: -200px;
+            opacity: 0;
+            overflow: hidden;
+        }
+        100% {
+            left: 0;
+            opacity: 1;
+        }
+    }
+    .area6 > .area6 > .content > .title-box .title-3 {
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+        margin: 0 0 0 20px;
+    }
+
+    .area6 > .content .container .line {
+        width: calc(100% + 200px);
+        height: 1px;
+        background-color: #000000;
+        margin: 10px 0 20px 0;
+    }
+
+    .area6 > .content > .item-box {
+        width: 100%;
+        display: flex;
+        gap: 30px;
+        margin: 120px 0 0 0;
+    }
+
+    .area6 > .content > .item-box > .item {
+        width: calc((100% - 30px) / 4);
+    }
+
+    .area6 > .content > .item-box > .item > .img-box {
+        width: 100%;
+        position: relative; /* Ensure the overlay is positioned relative to the img-box */
+        transition: transform 0.3s ease-in-out; /* Smooth transition for the zoom effect */
+        z-index: 1; /* Set initial z-index to ensure it's above other content */
+    }
+
+    .area6 > .content > .item-box > .item > .img-box:hover {
+        transform: scale(1.2); /* Scale up the img-box */
+        z-index: 2; /* Increase z-index on hover to ensure it stays on top */
+    }
+
+    .area6 .item .img-box::after {
+        content: ''; /* Empty content for the overlay */
+        position: absolute; /* Absolute positioning to cover the img-box */
+        z-index: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(243, 170, 34, 0.9), rgba(236, 174, 59, 0));
+        opacity: 0; /* Start with the overlay invisible */
+        transition: opacity 0.3s ease-in-out; /* Smooth transition for the overlay appearance */
+    }
+    .area6 .item .img-box:hover::after {
+        opacity: 1; /* Show the overlay on hover */
+    }
+
+    .area6 .odd1 .img-box .overlay-text {
+        width: 20px;
+        position: absolute; /* 绝对定位覆盖整个 img-box */
+        top: 40px;
+        right: 0px;
+        color: rgba(0, 0, 0, 0.9);
+        font-size: 14px; /* 文字大小可以根据需要调整 */
+        text-align: center; /* 文字居中 */
+        opacity: 0; /* 初始状态为不可见 */
+        transition: opacity 0.3s ease-in-out; /* 文字出现的过渡 */
+        pointer-events: none; /* 遮罩上的文字不影响鼠标事件 */
+        z-index: 10; /* Ensure text is above overlay */
+        /* font-weight: 700; */
+        line-height: 1.25em;
+    }
+    .area6 .odd2 .img-box .overlay-text {
+        width: 20px;
+        position: absolute; /* 绝对定位覆盖整个 img-box */
+        bottom: 40px;
+        right: 0px;
+        color: rgba(0, 0, 0, 0.9);
+        font-size: 14px; /* 文字大小可以根据需要调整 */
+        text-align: center; /* 文字居中 */
+        opacity: 0; /* 初始状态为不可见 */
+        transition: opacity 0.3s ease-in-out; /* 文字出现的过渡 */
+        pointer-events: none; /* 遮罩上的文字不影响鼠标事件 */
+        z-index: 10; /* Ensure text is above overlay */
+        /* font-weight: 700; */
+        line-height: 1.25em;
+    }
+    .area6 .even1 .img-box .overlay-text {
+        width: 20px;
+        position: absolute; /* 绝对定位覆盖整个 img-box */
+        bottom: 40px;
+        left: 0px;
+        color: #ffffff; /* 文字颜色为白色 */
+        font-size: 14px; /* 文字大小可以根据需要调整 */
+        text-align: center; /* 文字居中 */
+        opacity: 0; /* 初始状态为不可见 */
+        transition: opacity 0.3s ease-in-out; /* 文字出现的过渡 */
+        pointer-events: none; /* 遮罩上的文字不影响鼠标事件 */
+        z-index: 10; /* Ensure text is above overlay */
+        /* font-weight: 700; */
+        line-height: 1.25em;
+    }
+    .area6 .even2 .img-box .overlay-text {
+        width: 20px;
+        position: absolute; /* 绝对定位覆盖整个 img-box */
+        top: 40px;
+        left: 0px;
+        color: rgba(0, 0, 0, 0.9);
+        font-size: 14px; /* 文字大小可以根据需要调整 */
+        text-align: center; /* 文字居中 */
+        opacity: 0; /* 初始状态为不可见 */
+        transition: opacity 0.3s ease-in-out; /* 文字出现的过渡 */
+        pointer-events: none; /* 遮罩上的文字不影响鼠标事件 */
+        z-index: 10; /* Ensure text is above overlay */
+        /* font-weight: 700; */
+        line-height: 1.25em;
+    }
+
+    .area6 .item .img-box:hover .overlay-text {
+        opacity: 0.9;
+        width: 20px;
+        display: flex;
+        flex-direction: column;
+        z-index: 99;
+    }
+    .area6 > .content > .item-box > .item > .img-box > img {
+        width: 100%;
+        z-index: 100;
+    }
+
+    .area6 > .content > .item-box > .item > .item-title {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .area6 > .content > .item-box > .item > .item-title > img {
+        width: 100px;
+    }
+    .area6 > .content > .item-box > .item > .item-title > p {
+        /* font-weight: 700; */
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.9);
+    }
+
+    /* 奇數item */
+    .area6 > .content > .item-box > .odd {
+        margin: 20px 0 0 0;
+    }
+    .area6 > .content > .item-box > .odd > .item-title {
+        margin: 0 0 20px 0;
+    }
+
+    .area6 > .content > .item-box > .odd > .item-title > p {
+        margin: 0 -40px 20px 0;
+    }
+    /* 奇數item */
+
+    /* 偶數item */
+    .area6 > .content > .item-box > .even {
+    }
+    .area6 > .content > .item-box > .even > .item-title {
+        margin: 20px 0 0 0;
+        justify-content: flex-start;
+    }
+
+    .area6 > .content > .item-box > .even > .item-title > p {
+        margin: 0 -40px 20px 0;
+    }
+    /* 偶數item */
+    /* --------- */
+
+    .area7 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        padding: 120px 0;
+        overflow: hidden;
+    }
+
+    .area7 > .circle {
+        background: radial-gradient(circle, rgba(216, 128, 28, 0.8) 40%, rgba(247, 182, 108, 0.05) 70%);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        padding: 40px;
+        position: absolute;
+        z-index: -10;
+        top: 20px;
+        left: 60px;
+        animation: area7_circle 2s ease-in-out forwards;
+    }
+
+    @keyframes area7_circle {
+        0% {
+            top: 20px;
+            left: 60px;
+        }
+        100% {
+            top: calc(100% - 400px);
+            left: calc(100% - 300px);
+            width: 400px;
+            height: 400px;
+            padding: 100px;
+        }
+    }
+
+    .area7 > .circle > img {
+        width: 100%;
+        position: relative;
+    }
+
+    .area7 > .content {
+        width: calc(100% - 400px);
+        max-width: 1280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .area7 > .content > .arrow {
+        width: 90px;
+        position: absolute;
+        top: 10px;
+        left: -150px;
+    }
+
+    .area7 > .content > .arrow > img {
+        width: 100%;
+    }
+
+    .area7 > .content > .title-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+        position: relative;
+    }
+
+    .area7 > .content > .title-box > .title {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .area7 > .content > .title-box .title-1 {
+        font-size: 24px;
+        /* font-weight: 700; */
+        letter-spacing: 0.2em;
+        color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        animation: area7slide 1s ease-in-out forwards;
+    }
+
+    @keyframes area7slide {
+        0% {
+            left: -200px;
+            opacity: 0;
+            overflow: hidden;
+        }
+        100% {
+            left: 0;
+            opacity: 1;
+        }
+    }
+
+    .area7 > .content > .title-box div {
+        display: flex;
+        align-items: flex-start;
+    }
+    .area7 > .content > .title-box .title-2 {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+        position: absolute;
+        top: 0;
+        right: 0;
+        /* animation: area7slide_1 1s ease-in-out forwards; */
+    }
+
+    @keyframes area7slide_1 {
+        0% {
+            left: -200px;
+            opacity: 0;
+            overflow: hidden;
+        }
+        100% {
+            left: 0;
+            opacity: 1;
+        }
+    }
+
+    .area7 > .content > .title-box .title-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        -webkit-text-stroke: 1px #e59100;
+        color: transparent;
+        position: absolute;
+        top: 0;
+        right: 0;
+        animation: area7slide_2 1s ease-in-out forwards;
+    }
+
+    @keyframes area7slide_2 {
+        0% {
+            top: -200px;
+            opacity: 0;
+            overflow: hidden;
+        }
+        100% {
+            top: 0;
+            opacity: 1;
+        }
+    }
+
+    .area7 > .content .line {
+        width: calc(100% - 220px);
+        height: 1px;
+        background-color: #000000;
+        position: absolute;
+        left: 0;
+        top: 100px;
+    }
+    .area7 > .content > .item-box {
+        width: calc(100% - 200px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        margin: 160px 0 0 0;
+        flex-wrap: wrap; /* 添加這一行 */
+    }
+
+    .area7 > .content > .item-box > .item {
+        width: calc((100% - 240px) / 4);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        transition: transform 0.3s, filter 0.3s;
+    }
+
+    .area7 > .content > .item-box > .item img,
+    .area7 > .content > .item-box > .item p {
+        transition: transform 0.3s, filter 0.3s;
+    }
+
+    /* .area7 > .content > .item-box > .item:hover {
+        transform: scale(1.2);
+    }
+
+    .area7 > .content > .item-box > .item:hover img,
+    .area7 > .content > .item-box > .item:hover p {
+        filter: brightness(1.5);
+        transform: scale(1.1);
+    } */
+
+    /* .area7 > .content > .item-box > .item:hover img {
+        box-shadow: rgba(220, 228, 107, 0.959) 0px 5px 15px;
+    } */
+
+    .area7 > .content > .item-box > .item > img {
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    .area7 > .content > .item-box > .item > p {
+        color: #c58323;
+        font-weight: 700;
+        font-size: 16px;
+        margin: 40px 0 0 0;
+    }
+
+    .area7 > .content > .link {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 60px 0 0 0;
+    }
+
+    .area7 > .content > .link > a {
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e59100;
+        padding: 10px 20px;
+        border-radius: 0 40px 40px 0;
+        box-shadow: rgba(220, 228, 107, 0.959) 0px 5px 15px;
+    }
+
+    .area7 > .content > .link > a > .more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .area7 .content > .link > a p {
+        color: #ffffff;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+
+    .area7 > .content > .link > a > .more img {
+        width: 30px;
+    }
+    /* --------- */
+    .area8 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        padding: 120px 0;
+        background-image: url('/images/home-area8-bg.png');
+        background-size: cover; /* 讓圖片覆蓋整個區域 */
+        background-position: center; /* 讓圖片居中 */
+        background-repeat: no-repeat; /* 防止圖片重複 */
+        overflow: hidden;
+    }
+
+    .area8 > .content {
+        width: calc(100% - 400px);
+        max-width: 1280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+    }
+    .area8 > .background-gradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* 確保背景在其他內容之下 */
+        background-image: url('/images/about-area8-bg.png');
+        background-size: cover; /* 讓圖片覆蓋整個區域 */
+        background-position: center; /* 讓圖片居中 */
+        background-repeat: no-repeat; /* 防止圖片重複 */
+    }
+
+    .area8 > .content .arrow {
+        width: 90px;
+        position: absolute;
+        top: -40px;
+        left: calc(100% - 100px);
+    }
+
+    .area8 > .content > .arrow > img {
+        width: 100%;
+    }
+
+    .area8 > .content > .title-box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        position: relative;
+    }
+
+    .area8 > .content > .title-box > .title {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 200px;
+    }
+
+    .area8 > .content > .title-box > .title > .container {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        gap: 40px;
+        position: absolute;
+        animation: area8_slideIn 1s ease-in-out forwards;
+    }
+
+    @keyframes area8_slideIn {
+        0% {
+            left: 200px;
+            opacity: 0;
+            overflow: hidden;
+        }
+        100% {
+            left: 0;
+            opacity: 1;
+        }
+    }
+    .area8 > .content > .title-box .title-1 {
+        font-size: 24px;
+        /* font-weight: 700; */
+        letter-spacing: 0.2em;
+        color: rgba(0, 0, 0, 0.9);
+    }
+    .area8 > .content > .title-box .title-3 {
+        font-size: 16px;
+        /* font-weight: 700; */
+        /* letter-spacing: 0.2em; */
+        color: rgba(0, 0, 0, 0.9);
+    }
+    .area8 > .content > .title-box div {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .area8 > .content > .title-box .line {
+        width: 70%;
+        height: 1px;
+        background-color: #000000;
+        position: absolute;
+        top: 40px;
+        left: 0;
+    }
+    .area8 > .content > .title-box .title-2 {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+        position: absolute;
+        top: -90px;
+        animation: area8_slideIn_2 1s ease-in-out forwards;
+    }
+
+    @keyframes area8_slideIn_2 {
+        0% {
+            left: -200px;
+            opacity: 0;
+            overflow: hidden;
+        }
+        100% {
+            left: 0;
+            opacity: 1;
+        }
+    }
+    .area8 > .area8 > .content > .title-box .title-3 {
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+        margin: 0 0 0 20px;
+    }
+
+    .area8 > .content .container .line {
+        width: calc(100% + 200px);
+        height: 1px;
+        background-color: #000000;
+        margin: 10px 0 20px 0;
+    }
+
+    .area8 > .content > .item-box {
+        width: 100%;
+        display: flex;
+        gap: 30px;
+        margin: 120px 0 0 0;
+    }
+
+    .area8 > .content > .item-box > .item-box-content {
+        width: calc((100% - 60) / 3);
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .area8 > .content > .item-box > .item-2 {
+        margin: 120px 0 0 0;
+    }
+
+    .area8 > .content > .item-box > .item-3 {
+        margin: 60px 0 0 0;
+    }
+
+    .area8 > .content > .item-box .item {
+        width: 100%;
+        position: relative;
+    }
+
+    .area8 > .content > .item-box .item::after {
+        content: '';
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, rgba(236, 174, 59, 0.9), rgba(236, 174, 59, 0));
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .area8 > .content > .item-box .item:hover::after {
+        opacity: 1;
+    }
+
+    .area8 > .content > .item-box .item img {
+        width: 100%;
+    }
+
+    .area8 > .content > .item-box .text-box {
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+        margin: auto;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .area8 > .content > .item-box .text-box .title {
+        font-size: 24px;
+        color: rgba(0, 0, 0, 0.9);
+        /* font-weight: bold; */
+        margin-bottom: 10px;
+    }
+    .area8 > .content > .item-box .text-box .underline {
+        width: 50px;
+        height: 3px;
+        background-color: black;
+        margin-bottom: 20px;
+    }
+    .area8 > .content > .item-box .text-box .text {
+        font-size: 16px;
+        /* font-weight: 700; */
+        color: rgba(0, 0, 0, 0.9);
+        line-height: 1.6;
+    }
+
+    .area9 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        padding: 80px 0;
+
+        overflow: hidden;
+    }
+
+    .area9 > .content {
+        width: calc(100% - 400px);
+        max-width: 1280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .area9 > .content > .arrow {
+        width: 90px;
+        position: absolute;
+        top: -50px;
+        left: -150px;
+    }
+
+    .area9 > .content > .arrow > img {
+        width: 100%;
+    }
+
+    .area9 > .content > .title-box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        position: relative;
+    }
+
+    .area9 > .content > .title-box > .title {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .area9 > .content > .title-box > .title > .container {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        gap: 40px;
+        position: absolute;
+        animation: area9_slideIn 1s ease-in-out forwards;
+    }
+
+    @keyframes area9_slideIn {
+        0% {
+            left: -500px;
+            opacity: 0;
+            overflow: hidden;
+        }
+        100% {
+            left: 0;
+            opacity: 1;
+        }
+    }
+    .area9 > .content > .title-box .title-1 {
+        font-size: 24px;
+        /* font-weight: 700; */
+        letter-spacing: 0.2em;
+        color: rgba(0, 0, 0, 0.9);
+    }
+
+    .area9 > .content > .title-box .title-3 {
+        font-size: 18px;
+        /* font-weight: 700; */
+        letter-spacing: 0.2em;
+        color: rgba(0, 0, 0, 0.9);
+    }
+
+    .area9 > .content > .title-box div {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .area9 > .content > .title-box .line {
+        width: calc(100% - 100px);
+        height: 1px;
+        background-color: #000000;
+        position: absolute;
+        top: 40px;
+        left: 0;
+    }
+    .area9 > .content > .title-box .title-2 {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        -webkit-text-stroke: 1px #e59100;
+        color: transparent;
+        position: absolute;
+        right: 0;
+        animation: area9_slideIn_2 1s ease-in-out forwards;
+    }
+
+    @keyframes area9_slideIn_2 {
+        0% {
+            top: -100px;
+            opacity: 0;
+        }
+        100% {
+            top: -60px;
+            opacity: 1;
+        }
+    }
+    .area9 > .area9 > .content > .title-box .title-3 {
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+        margin: 0 0 0 20px;
+    }
+
+    .area9 > .content .container .line {
+        width: calc(100% + 200px);
+        height: 1px;
+        background-color: #000000;
+        margin: 10px 0 20px 0;
+    }
+
+    .area9 > .content > .item-box {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        margin: 120px 0 0 0;
+    }
+
+    .area9 > .content > .item-box > .left {
+        width: 33.3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        color: #000000;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .area9 > .content > .item-box > .left > .info-box {
+        font-size: 16px;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .area9 > .content > .item-box > .left > .info-box div {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+    }
+
+    .area9 > .content > .item-box > .left .info-line p {
+    }
+
+    .area9 > .content > .item-box > .left .line {
+        width: 100%;
+        height: 1px;
+        background-color: #000000;
+        margin: 40px 0;
+    }
+
+    .area9 > .content > .item-box > .right {
+        width: 66.6%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .area9 > .content > .item-box > .right > img {
+        width: 100%;
+    }
+    .area9 > .content > .item-box > .left > .link {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        margin: 20px 0 0 0;
+    }
+
+    .area9 > .content > .item-box > .left .link > a {
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e59100;
+        padding: 10px 20px;
+        border-radius: 0 40px 40px 0;
+        box-shadow: rgba(220, 228, 107, 0.959) 0px 5px 15px;
+    }
+
+    .area9 > .content > .item-box > .left .link > a > .more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .area9 > .content > .item-box > .left .link > a > .more {
+    }
+    .area9 > .content > .item-box > .left .link > a p {
+        color: #ffffff;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+    .area9 > .content > .item-box > .left .link > a > .more img {
+        width: 30px;
+    }
+}
